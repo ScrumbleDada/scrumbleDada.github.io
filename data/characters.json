@@ -1,0 +1,178 @@
+{
+  "heroes": [
+    {
+      "id": "leo_faisca",
+      "name": "Léo Faísca",
+      "image": "assets/images/heroes/leo_faisca.png",
+      "folder": "Léo Faísca"
+    },
+    {
+      "id": "brocolino",
+      "name": "Brocolino",
+      "image": "assets/images/heroes/brocolino.png",
+      "folder": "Brocolino"
+    },
+    {
+      "id": "tico_turquesa",
+      "name": "Tico Turquesa",
+      "image": "assets/images/heroes/tico_turquesa.png",
+      "folder": "Tico Turquesa"
+    },
+    {
+      "id": "nicolauzinho",
+      "name": "Nicolauzinho",
+      "image": "assets/images/heroes/nicolauzinho.png",
+      "folder": "Nicolauzinho"
+    },
+    {
+      "id": "char_7",
+      "name": "Sombrino",
+      "image": "assets/images/heroes/char_7.png",
+      "folder": "Char 7"
+    },
+    {
+      "id": "keko",
+      "name": "Roxildo",
+      "image": "assets/images/heroes/keko.png",
+      "folder": "Keko"
+    },
+    {
+      "id": "espinhudo_zeca",
+      "name": "Espinhudo Zeca",
+      "image": "assets/images/heroes/espinhudo_zeca.png",
+      "folder": "Espinhudo Zeca"
+    },
+    {
+      "id": "beto_gorrinho",
+      "name": "Beto Boné",
+      "image": "assets/images/heroes/beto_gorrinho.png",
+      "folder": "Beto Gorrinho"
+    },
+    {
+      "id": "azulito",
+      "name": "Azulito",
+      "image": "assets/images/heroes/azulito.png",
+      "folder": "Azulito"
+    },
+    {
+      "id": "ninjoca",
+      "name": "Ninjoca",
+      "image": "assets/images/heroes/ninjoca.png",
+      "folder": "Ninjoca"
+    },
+    {
+      "id": "sir_latinha",
+      "name": "Sir Latinha",
+      "image": "assets/images/heroes/sir_latinha.png",
+      "folder": "Sir Latinha"
+    },
+    {
+      "id": "sir_latinha2",
+      "name": "Gelelô",
+      "image": "assets/images/heroes/sir_latinha2.png",
+      "folder": "Sir Latinha2"
+    },
+    {
+      "id": "atake",
+      "name": "Foguinho",
+      "image": "assets/images/heroes/atake.png",
+      "folder": "atake"
+    },
+    {
+      "id": "rosinha_pop",
+      "name": "Luluzinha Pop",
+      "image": "assets/images/heroes/rosinha_pop.png",
+      "folder": "Rosinha Pop"
+    },
+    {
+      "id": "parafusito",
+      "name": "R Parafusito",
+      "image": "assets/images/heroes/parafusito.png",
+      "folder": "Parafusito"
+    },
+    {
+      "id": "plin_plon",
+      "name": "Plin Plon",
+      "image": "assets/images/heroes/plin_plon.png",
+      "folder": "Plin Plon"
+    },
+    {
+      "id": "cocoberto",
+      "name": "Cocoberto",
+      "image": "assets/images/heroes/cocoberto.png",
+      "folder": "cocoBerto"
+    }
+  ],
+  "villains": [
+    {
+      "id": "zombie_small",
+      "name": "Zombie Small",
+      "image": "assets/images/villains/zombie_small.png",
+      "folder": "Viloes/1",
+      "order": 1
+    },
+    {
+      "id": "wizzart_b",
+      "name": "Wizzart B",
+      "image": "assets/images/villains/wizzart_b.png",
+      "folder": "Viloes/2",
+      "order": 2
+    },
+    {
+      "id": "wizzart_a",
+      "name": "Wizzart A",
+      "image": "assets/images/villains/wizzart_a.png",
+      "folder": "Viloes/3",
+      "order": 3
+    },
+    {
+      "id": "darkknight",
+      "name": "DarkKnight",
+      "image": "assets/images/villains/darkknight.png",
+      "folder": "Viloes/4",
+      "order": 4
+    },
+    {
+      "id": "orc_big",
+      "name": "Orc Big",
+      "image": "assets/images/villains/orc_big.png",
+      "folder": "Viloes/5",
+      "order": 5
+    },
+    {
+      "id": "pig_big",
+      "name": "Pig Big",
+      "image": "assets/images/villains/pig_big.png",
+      "folder": "Viloes/6",
+      "order": 6
+    },
+    {
+      "id": "orc_small",
+      "name": "Orc Small",
+      "image": "assets/images/villains/orc_small.png",
+      "folder": "Viloes/7",
+      "order": 7
+    },
+    {
+      "id": "skeleton_big",
+      "name": "Skeleton Big",
+      "image": "assets/images/villains/skeleton_big.png",
+      "folder": "Viloes/8",
+      "order": 8
+    },
+    {
+      "id": "wizzart_c",
+      "name": "Wizzart C",
+      "image": "assets/images/villains/wizzart_c.png",
+      "folder": "Viloes/9",
+      "order": 9
+    },
+    {
+      "id": "skeleton_small",
+      "name": "Skeleton Small",
+      "image": "assets/images/villains/skeleton_small.png",
+      "folder": "Viloes/10",
+      "order": 10
+    }
+  ]
+}

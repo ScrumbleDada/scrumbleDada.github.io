@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Scrumble — Jogo de palavras arcade</title>
+  <meta name="description" content="Scrumble: jogo de palavras no espaço. Forme palavras, vença vilões e desbloqueie heróis em português, inglês e francês.">
+  <meta name="author" content="Scrumble">
+  <meta name="theme-color" content="#070B1A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Scrumble — Arcade word game">
+  <meta property="og:description" content="Build words in space, defeat villains, unlock heroes. Play in Portuguese, English, or French.">
+  <meta property="og:image" content="assets/images/heroes/leo_faisca.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Scrumble",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "iOS",
+    "description": "Arcade word game set in space with heroes, villains, and multilingual dictionaries.",
+    "email": "scrumbledada@gmail.com",
+    "datePublished": "2026",
+    "inLanguage": ["pt", "en", "fr"]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-nav">
+    <div class="container">
+      <a href="#" class="logo">SCRUMBLE</a>
+      <nav aria-label="Principal">
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+          <li><a href="#heroes" data-i18n="nav.heroes">Heróis</a></li>
+          <li><a href="#villains" data-i18n="nav.villains">Vilões</a></li>
+          <li><a href="#languages" data-i18n="nav.languages">Idiomas</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container">
+        <p class="hero-badge" data-i18n="hero.badge">Neon Arcade • iOS</p>
+        <h1 data-i18n="hero.title">Scrumble</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">
+          Um jogo de palavras arcade no espaço: monte palavras no tabuleiro, enfrente vilões e desbloqueie heróis.
+        </p>
+        <button type="button" class="btn btn-primary is-disabled" disabled data-i18n="hero.cta">
+          Em breve na App Store
+        </button>
+        <div class="hero-preview">
+          <img src="assets/preview.gif" alt="Scrumble gameplay preview" width="320" height="320">
+        </div>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Idioma do site">
+      <div class="lang-switcher">
+        <button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <header class="section-header">
+        <h2>
+          <span data-i18n="about.title">Sobre o jogo</span>
+          <span class="section-sub" data-i18n="about.sub">Palavras • Batalha • Espaço</span>
+        </h2>
+      </header>
+      <p class="about-text" data-i18n="about.text">
+        Scrumble é um jogo de palavras estilo Scrabble com temática espacial e visual neon arcade.
+      </p>
+    </section>
+
+    <section id="features" class="container">
+      <header class="section-header">
+        <h2>
+          <span data-i18n="features.title">Como funciona</span>
+          <span class="section-sub" data-i18n="features.sub">Gameplay</span>
+        </h2>
+      </header>
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📝</div>
+          <h3 data-i18n="features.words.title">Palavras no tabuleiro</h3>
+          <p data-i18n="features.words.text">Combine letras em palavras reais do dicionário.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">⚔️</div>
+          <h3 data-i18n="features.battle.title">Duelo contra vilões</h3>
+          <p data-i18n="features.battle.text">Cada mundo traz um oponente diferente.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🌍</div>
+          <h3 data-i18n="features.lang.title">Três idiomas</h3>
+          <p data-i18n="features.lang.text">Dicionários em português, inglês e francês.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="heroes" class="carousel-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>
+            <span data-i18n="heroes.title">Heróis</span>
+            <span class="section-sub" data-i18n="heroes.sub">17 personagens jogáveis</span>
+          </h2>
+        </header>
+        <div
+          id="heroes-carousel"
+          class="carousel"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Heróis do Scrumble"
+          tabindex="0"
+        >
+          <div class="carousel-viewport">
+            <div class="carousel-track"></div>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" data-carousel-prev data-i18n-aria="carousel.prev" aria-label="Anterior">‹</button>
+            <span class="carousel-counter" aria-live="polite">1 / 17</span>
+            <button type="button" class="carousel-btn" data-carousel-next data-i18n-aria="carousel.next" aria-label="Próximo">›</button>
+          </div>
+          <div class="carousel-dots" role="tablist" aria-label="Slides de heróis"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="villains" class="carousel-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>
+            <span data-i18n="villains.title">Vilões</span>
+            <span class="section-sub" data-i18n="villains.sub">10 oponentes por mundo</span>
+          </h2>
+        </header>
+        <div
+          id="villains-carousel"
+          class="carousel carousel-villain"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Vilões do Scrumble"
+          tabindex="0"
+        >
+          <div class="carousel-viewport">
+            <div class="carousel-track"></div>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" data-carousel-prev data-i18n-aria="carousel.prev" aria-label="Anterior">‹</button>
+            <span class="carousel-counter" aria-live="polite">1 / 10</span>
+            <button type="button" class="carousel-btn" data-carousel-next data-i18n-aria="carousel.next" aria-label="Próximo">›</button>
+          </div>
+          <div class="carousel-dots" role="tablist" aria-label="Slides de vilões"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="languages" class="container">
+      <header class="section-header">
+        <h2>
+          <span data-i18n="languages.title">Idiomas do jogo</span>
+          <span class="section-sub" data-i18n="languages.sub">PT • EN • FR</span>
+        </h2>
+      </header>
+      <div class="lang-flags">
+        <div class="lang-flag-item">
+          <span aria-hidden="true">🇧🇷</span>
+          <strong data-i18n="languages.pt">Português</strong>
+        </div>
+        <div class="lang-flag-item">
+          <span aria-hidden="true">🇺🇸</span>
+          <strong data-i18n="languages.en">English</strong>
+        </div>
+        <div class="lang-flag-item">
+          <span aria-hidden="true">🇫🇷</span>
+          <strong data-i18n="languages.fr">Français</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <header class="section-header">
+        <h2>
+          <span data-i18n="contact.title">Contato</span>
+          <span class="section-sub" data-i18n="contact.sub">Suporte</span>
+        </h2>
+      </header>
+      <p class="about-text">
+        <span data-i18n="contact.text">Dúvidas, suporte ou parcerias:</span>
+        <br>
+        <span class="footer-email">
+          <a href="mailto:scrumbledada@gmail.com">scrumbledada@gmail.com</a>
+        </span>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer.copyright">© 2026 Scrumble. Todos os direitos reservados.</p>
+      <p data-i18n="footer.published">Desenvolvido e publicado em 2026.</p>
+      <p class="footer-note" data-i18n="footer.ios">Disponível em breve para iOS na App Store.</p>
+      <nav class="footer-links" aria-label="Legal">
+        <a href="privacy.html" data-i18n="footer.privacy">Política de privacidade</a>
+        <a href="mailto:scrumbledada@gmail.com">scrumbledada@gmail.com</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
