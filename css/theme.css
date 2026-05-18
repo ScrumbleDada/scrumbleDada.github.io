@@ -216,6 +216,12 @@ p {
   text-align: center;
 }
 
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-badge {
   display: inline-block;
   padding: 0.35rem 0.85rem;
@@ -234,7 +240,8 @@ p {
 .hero-tagline {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   max-width: 36ch;
-  margin-inline: auto 1.5rem;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
 }
 
 .hero-preview {
@@ -580,6 +587,31 @@ section {
   font-size: 0.8rem;
   opacity: 0.8;
   margin-top: 1.5rem;
+}
+
+.footer-credits {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(170, 184, 255, 0.1);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+}
+
+.footer-credits-label {
+  display: block;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-secondary);
+  opacity: 0.75;
+  margin-bottom: 0.35rem;
+}
+
+.footer-credits-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: var(--accent);
+  text-shadow: 0 0 12px rgba(126, 214, 255, 0.35);
 }
 
 /* ——— Privacy page ——— */
