@@ -15,7 +15,7 @@ const I18N = {
     "hero.title": "Scrumble",
     "hero.tagline":
       "Um jogo de palavras arcade no espaço: monte palavras no tabuleiro, enfrente vilões e desbloqueie heróis.",
-    "hero.cta": "Em breve na App Store",
+    "hero.cta": "Baixar na App Store",
     "about.title": "Sobre o jogo",
     "about.sub": "Palavras • Batalha • Espaço",
     "about.text":
@@ -45,7 +45,7 @@ const I18N = {
     "contact.text": "Dúvidas, suporte ou parcerias:",
     "footer.copyright": "© 2026 Scrumble. Todos os direitos reservados.",
     "footer.published": "Desenvolvido e publicado em 2026.",
-    "footer.ios": "Disponível em breve para iOS na App Store.",
+    "footer.ios": "Disponível para iOS na App Store.",
     "footer.privacy": "Privacidade e App Store",
     "footer.credits.label": "Criado por",
     "footer.home": "Início",
@@ -65,7 +65,7 @@ const I18N = {
     "hero.title": "Scrumble",
     "hero.tagline":
       "An arcade word game set in space: build words on the board, face villains, and unlock heroes.",
-    "hero.cta": "Coming soon on the App Store",
+    "hero.cta": "Download on the App Store",
     "about.title": "About the game",
     "about.sub": "Words • Battle • Space",
     "about.text":
@@ -95,7 +95,7 @@ const I18N = {
     "contact.text": "Questions, support, or partnerships:",
     "footer.copyright": "© 2026 Scrumble. All rights reserved.",
     "footer.published": "Developed and published in 2026.",
-    "footer.ios": "Coming soon to iOS on the App Store.",
+    "footer.ios": "Available on iOS on the App Store.",
     "footer.privacy": "Privacy & App Store",
     "footer.credits.label": "Created by",
     "footer.home": "Home",
@@ -115,7 +115,7 @@ const I18N = {
     "hero.title": "Scrumble",
     "hero.tagline":
       "Un jeu de mots arcade dans l'espace : formez des mots sur le plateau, affrontez des vilains et débloquez des héros.",
-    "hero.cta": "Bientôt sur l'App Store",
+    "hero.cta": "Télécharger sur l'App Store",
     "about.title": "À propos du jeu",
     "about.sub": "Mots • Combat • Espace",
     "about.text":
@@ -145,7 +145,7 @@ const I18N = {
     "contact.text": "Questions, assistance ou partenariats :",
     "footer.copyright": "© 2026 Scrumble. Tous droits réservés.",
     "footer.published": "Développé et publié en 2026.",
-    "footer.ios": "Bientôt disponible sur iOS sur l'App Store.",
+    "footer.ios": "Disponible sur iOS sur l'App Store.",
     "footer.privacy": "Confidentialité et App Store",
     "footer.credits.label": "Créé par",
     "footer.home": "Accueil",
