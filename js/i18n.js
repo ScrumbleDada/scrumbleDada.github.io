@@ -158,7 +158,8 @@ const LANG_STORAGE_KEY = "scrumble-site-lang";
 const DEFAULT_LANG = "pt";
 
 function getStoredLang() {
-  const stored = localStorage.getItem(LANG_STORAGE_KEY);
+  let stored;
+  try { stored = localStorage.getItem(LANG_STORAGE_KEY); } catch { /* Storage is optional. */ }
   if (stored && I18N[stored]) return stored;
   const browser = (navigator.language || "pt").slice(0, 2).toLowerCase();
   if (I18N[browser]) return browser;
@@ -167,7 +168,7 @@ function getStoredLang() {
 
 function setLang(lang) {
   if (!I18N[lang]) return;
-  localStorage.setItem(LANG_STORAGE_KEY, lang);
+  try { localStorage.setItem(LANG_STORAGE_KEY, lang); } catch { /* Storage is optional. */ }
   document.documentElement.lang = lang === "pt" ? "pt-BR" : lang;
   applyTranslations(lang);
   document.querySelectorAll(".lang-btn").forEach((btn) => {

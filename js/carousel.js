@@ -1,3 +1,5 @@
+const SCRUMBLE_ASSET_ROOT = new URL("../", document.currentScript.src);
+
 /**
  * Accessible carousel: prev/next, dots, keyboard, touch swipe, optional autoplay.
  */
@@ -144,7 +146,7 @@ async function initCarouselsFromData() {
 
   let data;
   try {
-    const res = await fetch("data/characters.json");
+    const res = await fetch(new URL("data/characters.json", SCRUMBLE_ASSET_ROOT));
     data = await res.json();
   } catch (e) {
     console.error("Failed to load characters.json", e);
@@ -161,7 +163,7 @@ async function initCarouselsFromData() {
       slide.setAttribute("role", "group");
       slide.setAttribute("aria-roledescription", "slide");
       const img = document.createElement("img");
-      img.src = char.image;
+      img.src = new URL(char.image, SCRUMBLE_ASSET_ROOT).href;
       img.alt = char.name;
       img.width = 220;
       img.height = 220;

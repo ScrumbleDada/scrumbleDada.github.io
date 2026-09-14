@@ -1,6 +1,6 @@
-# Scrumble — Site oficial
+# RBS — Apps, música e jogos
 
-Landing page estática do jogo **Scrumble** (tema neon arcade), com carrosséis de heróis e vilões, textos em PT/EN/FR e página de privacidade para a App Store.
+Home institucional estática da **RBS**, com catálogo de projetos e página dedicada ao jogo **Scrumble** em `apps/scrumble/` (tema neon arcade), com carrosséis de heróis e vilões, textos em PT/EN/FR e página de privacidade para a App Store.
 
 ## Desenvolvimento local
 
@@ -12,6 +12,10 @@ python3 -m http.server 8000
 Abra [http://localhost:8000](http://localhost:8000).
 
 > Use um servidor local (não abra `index.html` direto no navegador) para que o carrossel carregue `data/characters.json` corretamente.
+
+A preferência de idioma (PT/EN/FR) é compartilhada entre RBS e Scrumble. A política permanece em `privacy.html` para preservar links existentes. Os caminhos relativos permitem servir também em subdiretórios.
+
+Para adicionar um projeto, crie sua página em `apps/<nome>/` e acrescente um card na home com traduções em `js/rbs.js`.
 
 ## Atualizar imagens dos personagens
 
@@ -53,7 +57,9 @@ git push -u origin main
 
 | Caminho | Descrição |
 |---------|-----------|
-| `index.html` | Página principal |
+| `index.html` | Página principal da RBS |
+| `apps/scrumble/index.html` | Página do Scrumble |
+| `css/rbs.css` / `js/rbs.js` | Visual e traduções da RBS |
 | `privacy.html` | Privacidade, classificação etária e informações para a App Store |
 | `css/theme.css` | Tema neon (cores do jogo) |
 | `js/i18n.js` | Traduções PT / EN / FR |

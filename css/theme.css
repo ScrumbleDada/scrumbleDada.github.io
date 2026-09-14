@@ -724,3 +724,7 @@ section {
   white-space: nowrap;
   border: 0;
 }
+
+/* Keep the company link available even when the mobile section menu is hidden. */
+.rbs-back { white-space: nowrap; font-size: 13px; color: var(--text-secondary); }
+.rbs-back:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
