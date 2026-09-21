@@ -1,11 +1,10 @@
-# RBS — Apps, música e jogos
+# Scrumble — site do jogo
 
-Home institucional estática da **RBS**, com catálogo de projetos e página dedicada ao jogo **Scrumble** em `apps/scrumble/` (tema neon arcade), com carrosséis de heróis e vilões, textos em PT/EN/FR e página de privacidade para a App Store.
+Home do **Scrumble** (jogo de palavras arcade) em GitHub Pages. A empresa B2B **RBS Tech** vive em [rbs-site-production.up.railway.app](https://rbs-site-production.up.railway.app).
 
 ## Desenvolvimento local
 
 ```bash
-cd /Users/rennanrbs/Desktop/Scrumble.io
 python3 -m http.server 8000
 ```
 
@@ -13,9 +12,7 @@ Abra [http://localhost:8000](http://localhost:8000).
 
 > Use um servidor local (não abra `index.html` direto no navegador) para que o carrossel carregue `data/characters.json` corretamente.
 
-A preferência de idioma (PT/EN/FR) é compartilhada entre RBS e Scrumble. A política permanece em `privacy.html` para preservar links existentes. Os caminhos relativos permitem servir também em subdiretórios.
-
-Para adicionar um projeto, crie sua página em `apps/<nome>/` e acrescente um card na home com traduções em `js/rbs.js`.
+A preferência de idioma (PT/EN/FR) é compartilhada. A política permanece em `privacy.html` para preservar links existentes.
 
 ## Atualizar imagens dos personagens
 
@@ -25,47 +22,23 @@ Quando adicionar personagens no projeto iOS (`ScrumBly`):
 ./scripts/copy-assets.sh
 ```
 
-O script lê as pastas do jogo e regenera `data/characters.json`:
-
-- **Heróis:** `ScrumBly/Character/<Nome>/Personagem/animacao1/frame_001.png` — o nome vem da pasta (`Léo Faísca`, `Brocolino`, etc.).
-- **Vilões:** `ScrumBly/Viloes/<número>/Personagem/animacao1/frame_001.png` — o nome vem do PNG na raiz da pasta (ex. `Zombie_Small`).
-
-Variável opcional: `SCRUMBLY_ROOT=/caminho/para/ScrumBly`
-
 ## Publicar no GitHub Pages
 
-1. Crie um repositório no GitHub (ex.: `scrumble` ou `scrumble.io`).
-2. Envie o conteúdo desta pasta para a branch `main`.
-3. No GitHub: **Settings → Pages → Build and deployment**
-   - Source: **Deploy from a branch**
-   - Branch: `main` / folder **`/ (root)`**
-4. Aguarde alguns minutos. O site ficará em:
-   - `https://<seu-usuario>.github.io/<nome-do-repo>/`
+Branch `main` → Settings → Pages → Deploy from a branch → `main` / `/ (root)`.
 
-### Primeiro push (exemplo)
-
-```bash
-git init
-git add .
-git commit -m "Site inicial Scrumble"
-git remote add origin https://github.com/<usuario>/<repo>.git
-git branch -M main
-git push -u origin main
-```
+Site: `https://scrumbledada.github.io/`
 
 ## Estrutura
 
 | Caminho | Descrição |
 |---------|-----------|
-| `index.html` | Página principal da RBS |
-| `apps/scrumble/index.html` | Página do Scrumble |
-| `css/rbs.css` / `js/rbs.js` | Visual e traduções da RBS |
-| `privacy.html` | Privacidade, classificação etária e informações para a App Store |
-| `css/theme.css` | Tema neon (cores do jogo) |
-| `js/i18n.js` | Traduções PT / EN / FR |
-| `js/carousel.js` | Carrosséis |
-| `data/characters.json` | Lista de heróis e vilões |
-| `assets/images/` | Miniaturas dos personagens |
+| `index.html` | Home Scrumble (produto) |
+| `apps/scrumble/index.html` | Mesma página do jogo (URL legada) |
+| `privacy.html` | Privacidade / App Store |
+| `css/theme.css` | Tema neon |
+| `js/i18n.js` / `js/carousel.js` / `js/main.js` | i18n e carrosséis |
+| `data/characters.json` | Heróis e vilões |
+| `assets/images/` | Arte dos personagens |
 
 ## Contato
 
