@@ -32,6 +32,35 @@ body.app-page.marca{
   --line:rgba(246,241,232,.08);
   --display:"Newsreader","Iowan Old Style",Palatino,"Palatino Linotype","Times New Roman",serif;
 }
+body.app-page.papelito{
+  --ink:#1c3d32;
+  --muted:#66736c;
+  --blue:#1f4d3f;
+  --paper:#fbf4ec;
+  --paper-2:#f4e6d8;
+  --paper-3:#f3e2d6;
+  --accent:#d9483b;
+  --accent-deep:#1f4d3f;
+  --glow:rgba(31,77,63,.34);
+  --glow-soft:rgba(217,72,59,.16);
+  --line:rgba(31,77,63,.12);
+  color-scheme:light;
+  background:
+    radial-gradient(ellipse at 12% -8%,rgba(31,77,63,.14),transparent 52%),
+    radial-gradient(ellipse at 108% 8%,rgba(217,72,59,.12),transparent 46%),
+    linear-gradient(180deg,#fbf4ec 0%,#f3e2d6 100%);
+}
+body.papelito .skip-link{background:#fff;color:var(--ink)}
+body.papelito .languages button[aria-pressed=true]{background:#ead9cc;color:var(--ink)}
+body.papelito .device-bezel{box-shadow:0 40px 90px rgba(31,77,63,.18),0 24px 60px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.22)}
+body.papelito .app-band{background:linear-gradient(180deg,#f7e9dd,#f1ddd0);border-color:rgba(31,77,63,.08)}
+body.papelito .why-card{
+  background:rgba(255,255,255,.68);
+  -webkit-backdrop-filter:saturate(140%) blur(18px);
+  backdrop-filter:saturate(140%) blur(18px);
+  border:1px solid rgba(255,255,255,.78);
+  box-shadow:0 12px 36px rgba(31,77,63,.07);
+}
 body.app-page .skip-link{background:#1a2428;color:var(--ink)}
 body.app-page .site-header{height:88px}
 body.app-page .site-footer{border-color:var(--line)}
@@ -135,6 +164,22 @@ body.app-page .store-badge svg{display:block;flex:0 0 auto}
 body.app-page .store-badge-copy{display:flex;flex-direction:column;line-height:1.1}
 body.app-page .store-badge-kicker{font-size:11px;letter-spacing:.03em;color:#3a3a3c}
 body.app-page .store-badge-name{font-size:20px;font-weight:630;letter-spacing:-.03em}
+body.app-page .store-badge.is-soon{
+  pointer-events:none;
+  cursor:default;
+  user-select:none;
+  opacity:.62;
+  filter:saturate(.55);
+  box-shadow:none;
+  background:#e8e8ed;
+  color:#3a3a3c;
+}
+body.app-page .store-badge.is-soon:hover{
+  color:#3a3a3c;
+  background:#e8e8ed;
+  transform:none;
+}
+body.app-page .store-badge.is-soon .store-badge-kicker{color:#6e6e73}
 
 body.app-page .app-feature{
   position:relative;
